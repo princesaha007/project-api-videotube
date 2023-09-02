@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav >
+        <div class=" mx-4 md:mx-20 mt-5 mb-4 md:mb-0 lg:mb-0">
+            <img src="images/Logo.png" alt="none">
+            </div>
+            <hr class="border-gray-300 mx-20 mt-5">
+        
+
+    </nav>
+
+<main>
+    <div class="collapse collapse-plus bg-base-200 ">
+        <input type="radio" name="my-accordion-3" checked="checked" /> 
+        <div class="collapse-title text-xl font-bold ">
+            Discuss the scope of var, let, and const
+        </div>
+        <div class="collapse-content"> 
+          <p><span class="font-bold text-lg">var: </span>if we declare a variable with var we can access it globally as var has function scope so after declaring with var it will be hoisted at the top of the function and this can create conflict within the codes as some unexpected scenario can be occurred <br> 
+            <br>
+            
+            <span class="font-bold text-lg">let:  </span> let is different from var. it is block scoped and we cannot access it globally as long as it is not initialized or defined. they cant cross the boundary of {}. so it is a good practice to use let.<br>
+        <br>
+        <span class="font-bold text-lg">const: </span>const is also block scoped as let and we have to declare that outer {} to access it globally. and like the var and let the values cannot me changed after we initialize the value</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" /> 
+        <div class="collapse-title text-xl font-bold">
+            Tell us the use cases of null and undefined
+        </div>
+        <div class="collapse-content"> 
+          <div >
+            <p class="font-bold text-lg">Undefined:</p>
+            <ul>
+                <li>1. variable that is not initialized will give undefined (let first ;)
+                    </li>
+                <li>2. function with no return </li>
+                <li>3. set a value directly to undefined</li>
+                <li>  4. if return has nothing on the right side will return undefined</li>
+                <li>  5. property that doesn't exists on an object </li>
+                <li>  6. accessing array elements outside of the index range </li>
+                <li> 7. deleting an element inside an array</li>
+                <li>8.parameter that is not passed</li>
+            </ul>
+
+        </div>
+        <div >
+            <p class="font-bold text-lg">Null:</p>
+            Creating an initial value for a variable or property to show that it presently doesn't point to anything of significance.
+            <br>
+            If the return value is not valid gives you null.
+
+
+        </div>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" /> 
+        <div class="collapse-title text-xl font-bold">
+            What do you mean by REST API?
+        </div>
+        <div class="collapse-content"> 
+          <p>REST is an architectural set of restrictions rather than a protocol or standard. REST can be implemented by API developers in a variety of ways.
+            <br>
+            
+          Rest API is used  Delivering static resource representations in JSON . It is an interface that allows two computers to communicate securely using the internet.Depending on how the API is designed by the developers, the REST API request and response are different. REST APIs enable clients to request, create, update, and remove data resources via the internet by adhering to statelessness, standard interfaces, and layered systems concepts. They are frequently created in web and mobile apps to facilitate simple and scalable data transmission between various platforms.
+
+          </p>
+        </div>
+      </div>
+</main>
+   
+    
+</body>
+</html>
